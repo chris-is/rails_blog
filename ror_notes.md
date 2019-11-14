@@ -27,7 +27,7 @@ Advanatage is threefold:
 - Ease of maintenance: low dependency on one another
 - Reusability: a model can be reused by multiple views.
 
-![Excellent article about this](https://www.sitepoint.com/model-view-controller-mvc-architecture-rails/)
+[Excellent article about this](https://www.sitepoint.com/model-view-controller-mvc-architecture-rails/)
 
 ERB (e-Ruby) handler is designed to embed Ruby in HTML, which is the format of a standard view template. For other formats like JS or XML there are other handlers.
 
@@ -65,7 +65,7 @@ A database migration file created under `db/migrate` is basically a class that m
 ### Review: SQLite vs ORDBMS like MySQL
 - SQLite is serverless and is self-contained. This means the DB engine runs as part of the app.
 MySQL and other ORDBMS require a server to run; they require a client and server architecture to interact over a network.
-![SQLite vs MYSQL](https://www.hostinger.com/tutorials/sqlite-vs-mysql-whats-the-difference/)
+[SQLite vs MYSQL](https://www.hostinger.com/tutorials/sqlite-vs-mysql-whats-the-difference/)
 
 ## Models (II)
 Every Rails model can be initialized with its respective attributes, which are automatically mapped to the respective database columns. 
@@ -96,7 +96,7 @@ This can be set at the controller level using `http_basic_authenticate_with name
 
 **NOTE: the colon operator before a variable a symbol -- equivalent to a static ENUM value in other languages; they are created once, and checking equality is a simple operation. The colon operator after a variable is an alternate for hashes. For example: foo: 1, bar: 2, means the symbol "key" will point to the symbol "value". Previously in Rails, the => operator was used instead, like :foo => :symbol. But new Rails has introduced syntactic sugar.**
 
-![colon explanation](https://dev.to/aswathm78/explain-colon-and-colon-in-ruby-like-im-five-2646/comments)
+[colon explanation](https://dev.to/aswathm78/explain-colon-and-colon-in-ruby-like-im-five-2646/comments)
 
 ## redirect_to
 Another way to handle returning responses to an HTTP request is with `redirect_to`. As already established, `render` tells Rails which view (or other asset) to use in constructing a reponse. The `redirect_to` method does something completely different: it tells the browser to send a new request for a different URL. 
@@ -106,4 +106,4 @@ E.g. `redirect_to photos_url`
 The `<%= %>` tag is used if you want to run the RUby code and insert the results to the HTML at that position.
 The `<% %>` tag is used if you want to run the code between the delimiters and **not** insert the result in the HTML. This is useful for control flow structures (if statements or loops).
 
-![Rails cheat sheet](http://www.pragtob.info/rails-beginner-cheatsheet/)
+[Rails cheat sheet](http://www.pragtob.info/rails-beginner-cheatsheet/)
